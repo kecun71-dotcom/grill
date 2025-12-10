@@ -106,7 +106,7 @@ export function SocialShare({
   };
 
   // 如果支持原生分享 API，优先使用
-  if (typeof navigator !== 'undefined' && navigator.share) {
+  if (typeof navigator !== 'undefined' && 'share' in navigator && typeof navigator.share === 'function') {
     return (
       <Button
         variant={variant}
