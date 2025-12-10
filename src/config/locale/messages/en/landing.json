@@ -1,0 +1,425 @@
+{
+  "header": {
+    "id": "header",
+    "brand": {
+      "title": "BBQ Menu AI",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "BBQ Menu AI"
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Features",
+          "url": "/#features",
+          "icon": "Sparkles"
+        },
+        {
+          "title": "Generate Menu",
+          "url": "/generate",
+          "icon": "ChefHat"
+        },
+        {
+          "title": "Pricing",
+          "url": "/pricing",
+          "icon": "DollarSign"
+        },
+        {
+          "title": "Blog",
+          "url": "/blog",
+          "icon": "Newspaper"
+        }
+      ]
+    },
+    "buttons": [],
+    "user_nav": {
+      "show_name": true,
+      "show_credits": true,
+      "show_sign_out": true,
+      "items": [
+        {
+          "title": "Billing",
+          "url": "/settings/billing",
+          "icon": "CreditCard"
+        },
+        {
+          "title": "Shopping List",
+          "url": "/shopping",
+          "icon": "ShoppingCart"
+        }
+      ]
+    },
+    "show_sign": true,
+    "show_theme": true,
+    "show_locale": true
+  },
+  "hero": {
+    "id": "hero",
+    "title": "AI-Powered BBQ Menu Generator",
+    "highlight_text": "BBQ Menu",
+    "description": "Create perfect BBQ menus in seconds with AI assistance.<br/>Personalized recipes, smart shopping lists, and step-by-step guidance.",
+    "announcement": {
+      "badge": "New",
+      "title": "🔥 BBQ Menu AI is here!",
+      "url": "/generate"
+    },
+    "tip": "🎁 7-day free trial for all plans",
+    "buttons": [
+      {
+        "title": "Generate Menu",
+        "icon": "Flame",
+        "url": "/generate",
+        "target": "_self",
+        "variant": "default"
+      },
+      {
+        "title": "Learn More",
+        "icon": "BookOpenText",
+        "url": "/#features",
+        "target": "_self",
+        "variant": "outline"
+      }
+    ],
+    "show_avatars": true,
+    "avatars_tip": "1000+ grill masters using BBQ Menu AI",
+    "show_award": false,
+    "image": {
+      "src": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1920&h=1080&fit=crop",
+      "alt": "BBQ Grilling"
+    }
+  },
+  "logos": {
+    "title": "Built with cutting-edge technology",
+    "items": []
+  },
+  "introduce": {
+    "id": "introduce",
+    "title": "What is BBQ Menu AI?",
+    "label": "Introduction",
+    "description": "BBQ Menu AI is an AI-powered recipe generator that creates perfect BBQ menus based on your preferences.",
+    "image": {
+      "src": "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=1200&h=800&fit=crop",
+      "alt": "BBQ Introduction"
+    },
+    "items": [
+      {
+        "title": "Personalized Recipes",
+        "description": "Get customized BBQ recipes based on servings, budget, and dietary preferences.",
+        "icon": "RiUserHeartLine"
+      },
+      {
+        "title": "Smart Shopping Lists",
+        "description": "Automatically generated shopping lists with quantities and estimated prices.",
+        "icon": "RiShoppingCart2Line"
+      },
+      {
+        "title": "Step-by-Step Guidance",
+        "description": "Detailed cooking instructions with built-in timers for perfect results.",
+        "icon": "RiTimeLine"
+      },
+      {
+        "title": "Multi-Language",
+        "description": "Available in English, German, and Chinese for BBQ lovers worldwide.",
+        "icon": "RiGlobalLine"
+      }
+    ]
+  },
+  "benefits": {
+    "id": "benefits",
+    "title": "Why BBQ Menu AI?",
+    "label": "Benefits",
+    "description": "Everything you need for the perfect grilling experience - from AI-powered recipes to shopping planning.",
+    "items": [
+      {
+        "title": "Save Time",
+        "description": "No more endless recipe searching. Our AI creates perfect menus instantly for any occasion.",
+        "icon": "RiTimeLine"
+      },
+      {
+        "title": "Budget-Friendly",
+        "description": "Choose your budget and get recipes that match perfectly.",
+        "icon": "RiMoneyDollarCircleLine"
+      },
+      {
+        "title": "Diet-Conscious",
+        "description": "Vegetarian, vegan, gluten-free, and low-carb options for every taste.",
+        "icon": "RiHeartPulseLine"
+      }
+    ]
+  },
+  "usage": {
+    "id": "usage",
+    "title": "How It Works",
+    "description": "Create your perfect BBQ menu in 4 simple steps:",
+    "image_position": "left",
+    "text_align": "center",
+    "items": [
+      {
+        "title": "1. Enter Preferences",
+        "description": "Choose servings, budget, and dietary requirements."
+      },
+      {
+        "title": "2. AI Generates Menu",
+        "description": "Our AI creates personalized recipes in seconds."
+      },
+      {
+        "title": "3. View Recipes",
+        "description": "Detailed instructions with chef's tips."
+      },
+      {
+        "title": "4. Create Shopping List",
+        "description": "All ingredients at a glance with price estimates."
+      }
+    ]
+  },
+  "features": {
+    "id": "features",
+    "title": "Features",
+    "description": "Everything you need for perfect grilling.",
+    "items": [
+      {
+        "title": "AI Recipe Generator",
+        "description": "Personalized BBQ recipes based on your preferences and available ingredients.",
+        "icon": "RiRobot2Line"
+      },
+      {
+        "title": "Multi-Language",
+        "description": "Available in English, German, and Chinese with local measurement units.",
+        "icon": "RiGlobalLine"
+      },
+      {
+        "title": "Shopping Lists",
+        "description": "Automatic shopping lists with quantities and price estimates.",
+        "icon": "RiShoppingCart2Line"
+      },
+      {
+        "title": "Cooking Timers",
+        "description": "Built-in timers for precise timing at every step.",
+        "icon": "RiTimeLine"
+      },
+      {
+        "title": "Dietary Filters",
+        "description": "Vegetarian, vegan, gluten-free, and low-carb options.",
+        "icon": "RiHeartPulseLine"
+      },
+      {
+        "title": "Save Recipes",
+        "description": "Save your favorite recipes and access them anytime.",
+        "icon": "RiBookmarkLine"
+      }
+    ]
+  },
+  "stats": {
+    "id": "stats",
+    "title": "BBQ Lovers Trust Us",
+    "description": "For easy and fast BBQ menus.",
+    "items": [
+      {
+        "title": "1000+",
+        "description": "Users"
+      },
+      {
+        "title": "5000+",
+        "description": "Menus Generated"
+      },
+      {
+        "title": "3",
+        "description": "Languages"
+      }
+    ]
+  },
+  "testimonials": {
+    "id": "testimonials",
+    "title": "What Our Users Say",
+    "description": "Feedback from grill masters using BBQ Menu AI.",
+    "items": [
+      {
+        "name": "Mike Johnson",
+        "role": "Weekend Griller",
+        "quote": "Finally, no more endless recipe searching! BBQ Menu AI has revolutionized my BBQ parties.",
+        "image": {
+          "src": "/imgs/avatars/1.png",
+          "alt": "Mike"
+        }
+      },
+      {
+        "name": "Sarah Chen",
+        "role": "Food Blogger",
+        "quote": "The shopping list feature is genius. I save so much time on planning!",
+        "image": {
+          "src": "/imgs/avatars/2.png",
+          "alt": "Sarah"
+        }
+      },
+      {
+        "name": "David Miller",
+        "role": "Family Dad",
+        "quote": "Perfect for family BBQs. The dietary filters help us accommodate all our guests.",
+        "image": {
+          "src": "/imgs/avatars/3.png",
+          "alt": "David"
+        }
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq",
+    "title": "Frequently Asked Questions",
+    "description": "Have another question? Contact us!",
+    "tip": "Can't find what you're looking for? Contact our <a href='mailto:support@bbqmenuai.com' class='text-primary font-medium hover:underline'>support team</a>",
+    "items": [
+      {
+        "question": "What is BBQ Menu AI?",
+        "answer": "BBQ Menu AI is an AI-powered recipe generator that creates personalized BBQ menus based on your preferences, budget, and dietary requirements."
+      },
+      {
+        "question": "What languages are supported?",
+        "answer": "BBQ Menu AI is available in English, German, and Chinese. Measurement units are automatically adjusted to your language (metric or US customary)."
+      },
+      {
+        "question": "Is there a free trial?",
+        "answer": "Yes! All plans come with a 7-day free trial. No credit card required."
+      },
+      {
+        "question": "Can I save my recipes?",
+        "answer": "Yes, with an account you can save your generated recipes, favorite them, and access them anytime."
+      },
+      {
+        "question": "How does the shopping list work?",
+        "answer": "After generating a menu, you can add all ingredients to your shopping list with one click. The list shows quantities and estimated prices."
+      }
+    ]
+  },
+  "cta": {
+    "id": "cta",
+    "title": "Ready to Start Grilling?",
+    "description": "Create your perfect BBQ menu in seconds.",
+    "buttons": [
+      {
+        "title": "Get Started Free",
+        "url": "/generate",
+        "target": "_self",
+        "icon": "Flame"
+      },
+      {
+        "title": "View Pricing",
+        "url": "/pricing",
+        "target": "_self",
+        "variant": "outline",
+        "icon": "DollarSign"
+      }
+    ]
+  },
+  "subscribe": {
+    "id": "subscribe",
+    "title": "Subscribe to our newsletter",
+    "description": "Get the latest BBQ tips and recipes.",
+    "submit": {
+      "input": {
+        "placeholder": "Enter your email"
+      },
+      "button": {
+        "title": "Subscribe"
+      },
+      "action": "/api/subscribe"
+    }
+  },
+  "footer": {
+    "id": "footer",
+    "brand": {
+      "title": "BBQ Menu AI",
+      "description": "AI-powered BBQ menu generator for perfect grilling every time.",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "BBQ Menu AI"
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Product",
+          "children": [
+            {
+              "title": "Features",
+              "url": "/#features",
+              "target": "_self"
+            },
+            {
+              "title": "Generate Menu",
+              "url": "/generate",
+              "target": "_self"
+            },
+            {
+              "title": "Pricing",
+              "url": "/pricing",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "Resources",
+          "children": [
+            {
+              "title": "Blog",
+              "url": "/blog",
+              "target": "_self"
+            },
+            {
+              "title": "Shopping List",
+              "url": "/shopping",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "Legal",
+          "children": [
+            {
+              "title": "Privacy Policy",
+              "url": "/privacy-policy",
+              "target": "_self"
+            },
+            {
+              "title": "Terms of Service",
+              "url": "/terms-of-service",
+              "target": "_self"
+            }
+          ]
+        }
+      ]
+    },
+    "social": {
+      "items": [
+        {
+          "title": "X",
+          "icon": "RiTwitterXFill",
+          "url": "https://x.com/bbqmenuai",
+          "target": "_blank"
+        },
+        {
+          "title": "Email",
+          "icon": "Mail",
+          "url": "mailto:support@bbqmenuai.com",
+          "target": "_self"
+        }
+      ]
+    },
+    "agreement": {
+      "items": [
+        {
+          "title": "Privacy Policy",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "Terms of Service",
+          "url": "/terms-of-service"
+        }
+      ]
+    },
+    "show_theme": true,
+    "show_locale": true
+  }
+}

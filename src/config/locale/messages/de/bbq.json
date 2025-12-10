@@ -1,0 +1,228 @@
+{
+  "metadata": {
+    "title": "BBQ Menu AI - KI-gestützter BBQ-Menü-Generator",
+    "description": "Erstellen Sie perfekte BBQ-Menüs in Sekunden mit KI-Unterstützung. Mehrsprachige Unterstützung für Englisch, Deutsch und Chinesisch."
+  },
+  "nav": {
+    "home": "Startseite",
+    "generate": "Menü Generieren",
+    "shopping": "Einkaufsliste",
+    "profile": "Profil",
+    "login": "Anmelden",
+    "signup": "Registrieren",
+    "logout": "Abmelden",
+    "menu": "Navigationsmenü",
+    "pricing": "Preise",
+    "blog": "Blog"
+  },
+  "hero": {
+    "title": "KI-gestützter BBQ-Menü-Generator",
+    "subtitle": "Erstellen Sie perfekte BBQ-Menüs in Sekunden mit KI-Unterstützung",
+    "cta": "Jetzt Grillen",
+    "cta_generate": "Menü Jetzt Generieren",
+    "learn_more": "Mehr Erfahren",
+    "free_trial": "Kostenlose Testversion - Keine Kreditkarte erforderlich"
+  },
+  "quick_generate": {
+    "title": "Schnell Generieren",
+    "servings_label": "Wie viele Personen?",
+    "budget_label": "Budgetbereich?",
+    "generate_button": "Menü Generieren"
+  },
+  "features": {
+    "title": "Warum BBQ Menu AI?",
+    "subtitle": "Alles, was Sie für das perfekte BBQ-Erlebnis brauchen",
+    "ai_powered": {
+      "title": "KI-gestützte Rezepte",
+      "description": "Erhalten Sie personalisierte BBQ-Rezepte basierend auf Ihren Vorlieben und Ernährungsbedürfnissen"
+    },
+    "multi_language": {
+      "title": "Mehrsprachige Unterstützung",
+      "description": "Verfügbar auf Englisch, Deutsch und Chinesisch für BBQ-Liebhaber weltweit"
+    },
+    "smart_shopping": {
+      "title": "Intelligente Einkaufslisten",
+      "description": "Automatisch generierte Einkaufslisten mit Mengen und Preisen"
+    },
+    "step_by_step": {
+      "title": "Schritt-für-Schritt Anleitung",
+      "description": "Folgen Sie detaillierten Anweisungen mit integrierten Koch-Timern"
+    },
+    "dietary": {
+      "title": "Ernährungsfilter",
+      "description": "Vegetarische, vegane, glutenfreie und Low-Carb-Optionen verfügbar"
+    },
+    "save_favorite": {
+      "title": "Speichern & Favorisieren",
+      "description": "Speichern Sie Ihre Lieblingsrezepte und greifen Sie jederzeit darauf zu"
+    }
+  },
+  "how_it_works": {
+    "title": "So Funktioniert's",
+    "subtitle": "Erstellen Sie Ihr perfektes BBQ-Menü in 4 einfachen Schritten",
+    "step1": {
+      "title": "Präferenzen Eingeben",
+      "description": "Teilen Sie uns Portionen, Budget und Ernährungsbedürfnisse mit"
+    },
+    "step2": {
+      "title": "KI Generiert Menü",
+      "description": "Unsere KI erstellt personalisierte BBQ-Rezepte für Sie"
+    },
+    "step3": {
+      "title": "Rezepte Ansehen",
+      "description": "Erhalten Sie detaillierte Anleitungen und Kochtipps"
+    },
+    "step4": {
+      "title": "Einkaufsliste",
+      "description": "Generieren Sie eine vollständige Einkaufsliste mit Preisen"
+    }
+  },
+  "generate": {
+    "title": "Generieren Sie Ihr BBQ-Menü",
+    "subtitle": "Teilen Sie uns Ihre Präferenzen mit und wir erstellen ein perfektes Menü",
+    "preferences": "Ihre Präferenzen",
+    "dietary_needs": "Ernährungsanforderungen",
+    "servings": "Anzahl der Portionen",
+    "budget": "Budgetbereich",
+    "budget_low": "Günstig",
+    "budget_medium": "Mittel",
+    "budget_high": "Premium",
+    "generate_button": "Menü Generieren",
+    "generating": "Generiere Ihr perfektes Menü...",
+    "vegetarian": "Vegetarisch",
+    "vegan": "Vegan",
+    "gluten_free": "Glutenfrei",
+    "low_carb": "Low Carb",
+    "none": "Keine",
+    "available_ingredients": "Vorhandene Zutaten",
+    "available_ingredients_placeholder": "Geben Sie Zutaten ein, die Sie bereits haben (z.B. Hähnchen, Paprika, Zwiebeln)...",
+    "additional_preferences": "Zusätzliche Präferenzen",
+    "additional_preferences_placeholder": "Bestimmte Kochstile oder besondere Wünsche...",
+    "result_title": "Ihr BBQ-Menü",
+    "regenerate": "Neues Menü Generieren",
+    "login_to_save": "Anmelden um Rezepte zu speichern"
+  },
+  "recipe": {
+    "ingredients": "Zutaten",
+    "instructions": "Anleitung",
+    "prep_time": "Vorbereitungszeit",
+    "cook_time": "Kochzeit",
+    "total_time": "Gesamtzeit",
+    "difficulty": "Schwierigkeit",
+    "servings": "Portionen",
+    "add_to_shopping": "Zur Einkaufsliste hinzufügen",
+    "added_to_shopping": "Zur Einkaufsliste hinzugefügt",
+    "start_timer": "Timer Starten",
+    "easy": "Einfach",
+    "medium": "Mittel",
+    "hard": "Schwer",
+    "minutes": "Min",
+    "hours": "Std",
+    "save_recipe": "Rezept Speichern",
+    "saved": "Gespeichert",
+    "favorite": "Favorit",
+    "favorited": "Favorisiert",
+    "remove_favorite": "Favorit Entfernen",
+    "view_recipe": "Rezept Ansehen",
+    "share": "Teilen",
+    "print": "Drucken",
+    "nutrition": "Nährwertangaben",
+    "tips": "Tipps vom Koch",
+    "back_to_menu": "Zurück zum Menü"
+  },
+  "shopping": {
+    "title": "Einkaufsliste",
+    "subtitle": "Ihre BBQ-Zutaten Einkaufsliste",
+    "empty": "Ihre Einkaufsliste ist leer",
+    "empty_description": "Fügen Sie Artikel aus Rezepten hinzu, um zu beginnen",
+    "add_items": "Artikel aus Rezepten hinzufügen",
+    "total_estimate": "Geschätzte Summe",
+    "clear_list": "Liste Löschen",
+    "clear_confirm": "Einkaufsliste Löschen?",
+    "clear_confirm_description": "Dies entfernt alle Artikel aus Ihrer Einkaufsliste. Diese Aktion kann nicht rückgängig gemacht werden.",
+    "mark_as_bought": "Als gekauft markieren",
+    "to_buy": "Zu Kaufen",
+    "bought": "Gekauft",
+    "items": "Artikel",
+    "progress": "Fortschritt",
+    "export": "Liste Exportieren",
+    "print": "Liste Drucken",
+    "item_added": "Zur Einkaufsliste hinzugefügt",
+    "item_removed": "Von der Einkaufsliste entfernt",
+    "list_cleared": "Einkaufsliste geleert",
+    "ingredients_added": "{count} Zutaten von {recipe} zur Einkaufsliste hinzugefügt",
+    "sync_failed": "Einkaufsliste konnte nicht synchronisiert werden"
+  },
+  "timer": {
+    "title": "Koch-Timer",
+    "start": "Start",
+    "pause": "Pause",
+    "resume": "Fortsetzen",
+    "reset": "Zurücksetzen",
+    "time_up": "Zeit ist Um!",
+    "remaining": "verbleibend"
+  },
+  "profile": {
+    "title": "Mein Profil",
+    "saved_menus": "Gespeicherte Menüs",
+    "favorites": "Lieblingsrezepte",
+    "history": "Koch-Verlauf",
+    "settings": "Einstellungen",
+    "language": "Sprache",
+    "theme": "Design",
+    "notifications": "Benachrichtigungen",
+    "subscription": "Abonnement",
+    "credits": "Verbleibende Credits"
+  },
+  "auth": {
+    "login_title": "In Ihr Konto einloggen",
+    "signup_title": "Konto Erstellen",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "confirm_password": "Passwort Bestätigen",
+    "login_button": "Anmelden",
+    "signup_button": "Registrieren",
+    "forgot_password": "Passwort Vergessen?",
+    "no_account": "Noch kein Konto?",
+    "has_account": "Bereits ein Konto?",
+    "continue_with": "Oder fortfahren mit",
+    "google_login": "Mit Google fortfahren",
+    "google_login_error": "Anmeldung mit Google fehlgeschlagen",
+    "github_login": "Mit GitHub fortfahren",
+    "github_login_error": "Anmeldung mit GitHub fehlgeschlagen",
+    "check_email_title": "E-Mail Prüfen",
+    "check_email_description": "Wir haben Ihnen eine Bestätigungs-E-Mail gesendet",
+    "reset_password_title": "Passwort Zurücksetzen",
+    "reset_password_description": "Geben Sie Ihre E-Mail-Adresse ein und wir senden Ihnen einen Link zum Zurücksetzen"
+  },
+  "common": {
+    "loading": "Lädt...",
+    "error": "Ein Fehler ist aufgetreten",
+    "success": "Erfolg!",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "back": "Zurück",
+    "next": "Weiter",
+    "search": "Suchen",
+    "view_all": "Alle Anzeigen",
+    "learn_more": "Mehr Erfahren",
+    "get_started": "Loslegen",
+    "try_free": "Kostenlos Testen"
+  },
+  "cta": {
+    "title": "Bereit zum Grillen?",
+    "subtitle": "Erstellen Sie Ihr perfektes BBQ-Menü in Sekunden",
+    "button": "Kostenlos Starten"
+  },
+  "footer": {
+    "description": "KI-gestützter BBQ-Menü-Generator für perfektes Grillen jedes Mal.",
+    "product": "Produkt",
+    "resources": "Ressourcen",
+    "company": "Unternehmen",
+    "legal": "Rechtliches",
+    "copyright": "© 2025 BBQ Menu AI. Alle Rechte vorbehalten."
+  }
+}
+

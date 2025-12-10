@@ -1,0 +1,228 @@
+{
+  "metadata": {
+    "title": "BBQ Menu AI - AI驱动的烧烤菜单生成器",
+    "description": "使用AI助手在几秒钟内创建完美的烧烤菜单。支持英语、德语和中文多语言。"
+  },
+  "nav": {
+    "home": "首页",
+    "generate": "生成菜单",
+    "shopping": "购物清单",
+    "profile": "个人中心",
+    "login": "登录",
+    "signup": "注册",
+    "logout": "退出",
+    "menu": "导航菜单",
+    "pricing": "定价",
+    "blog": "博客"
+  },
+  "hero": {
+    "title": "AI驱动的烧烤菜单生成器",
+    "subtitle": "使用AI助手在几秒钟内创建完美的烧烤菜单",
+    "cta": "开始烧烤",
+    "cta_generate": "立即生成菜单",
+    "learn_more": "了解更多",
+    "free_trial": "免费试用 - 无需信用卡"
+  },
+  "quick_generate": {
+    "title": "快速生成",
+    "servings_label": "用餐人数？",
+    "budget_label": "预算范围？",
+    "generate_button": "生成菜单"
+  },
+  "features": {
+    "title": "为什么选择 BBQ Menu AI？",
+    "subtitle": "完美烧烤体验所需的一切",
+    "ai_powered": {
+      "title": "AI驱动的食谱",
+      "description": "根据您的偏好和饮食需求获取个性化烧烤食谱"
+    },
+    "multi_language": {
+      "title": "多语言支持",
+      "description": "支持英语、德语和中文，服务全球烧烤爱好者"
+    },
+    "smart_shopping": {
+      "title": "智能购物清单",
+      "description": "自动生成带有数量和价格的购物清单"
+    },
+    "step_by_step": {
+      "title": "分步指导",
+      "description": "跟随详细说明和内置烹饪计时器"
+    },
+    "dietary": {
+      "title": "饮食筛选",
+      "description": "提供素食、纯素、无麸质和低碳水选项"
+    },
+    "save_favorite": {
+      "title": "保存与收藏",
+      "description": "保存您喜欢的食谱，随时访问"
+    }
+  },
+  "how_it_works": {
+    "title": "如何使用",
+    "subtitle": "4个简单步骤创建您的完美烧烤菜单",
+    "step1": {
+      "title": "输入偏好",
+      "description": "告诉我们您的用餐人数、预算和饮食需求"
+    },
+    "step2": {
+      "title": "AI生成菜单",
+      "description": "我们的AI为您创建个性化烧烤食谱"
+    },
+    "step3": {
+      "title": "查看食谱",
+      "description": "获取详细说明和烹饪技巧"
+    },
+    "step4": {
+      "title": "购物清单",
+      "description": "生成带价格的完整购物清单"
+    }
+  },
+  "generate": {
+    "title": "生成您的烧烤菜单",
+    "subtitle": "告诉我们您的偏好，我们将创建完美的菜单",
+    "preferences": "您的偏好",
+    "dietary_needs": "饮食要求",
+    "servings": "用餐人数",
+    "budget": "预算范围",
+    "budget_low": "经济实惠",
+    "budget_medium": "中等",
+    "budget_high": "高端",
+    "generate_button": "生成菜单",
+    "generating": "正在生成您的完美菜单...",
+    "vegetarian": "素食",
+    "vegan": "纯素",
+    "gluten_free": "无麸质",
+    "low_carb": "低碳水",
+    "none": "无",
+    "available_ingredients": "现有食材",
+    "available_ingredients_placeholder": "输入您已有的食材（例如：鸡肉、青椒、洋葱）...",
+    "additional_preferences": "其他偏好",
+    "additional_preferences_placeholder": "特定烹饪风格或特殊要求...",
+    "result_title": "您的烧烤菜单",
+    "regenerate": "重新生成菜单",
+    "login_to_save": "登录以保存食谱"
+  },
+  "recipe": {
+    "ingredients": "食材",
+    "instructions": "步骤",
+    "prep_time": "准备时间",
+    "cook_time": "烹饪时间",
+    "total_time": "总时间",
+    "difficulty": "难度",
+    "servings": "份量",
+    "add_to_shopping": "添加到购物清单",
+    "added_to_shopping": "已添加到购物清单",
+    "start_timer": "开始计时",
+    "easy": "简单",
+    "medium": "中等",
+    "hard": "困难",
+    "minutes": "分钟",
+    "hours": "小时",
+    "save_recipe": "保存食谱",
+    "saved": "已保存",
+    "favorite": "收藏",
+    "favorited": "已收藏",
+    "remove_favorite": "取消收藏",
+    "view_recipe": "查看食谱",
+    "share": "分享",
+    "print": "打印",
+    "nutrition": "营养信息",
+    "tips": "厨师提示",
+    "back_to_menu": "返回菜单"
+  },
+  "shopping": {
+    "title": "购物清单",
+    "subtitle": "您的烧烤食材购物清单",
+    "empty": "您的购物清单是空的",
+    "empty_description": "从食谱中添加食材开始",
+    "add_items": "从食谱中添加",
+    "total_estimate": "预计总价",
+    "clear_list": "清空列表",
+    "clear_confirm": "清空购物清单？",
+    "clear_confirm_description": "这将删除购物清单中的所有项目。此操作无法撤销。",
+    "mark_as_bought": "标记为已购买",
+    "to_buy": "待购买",
+    "bought": "已购买",
+    "items": "项",
+    "progress": "进度",
+    "export": "导出清单",
+    "print": "打印清单",
+    "item_added": "已添加到购物清单",
+    "item_removed": "已从购物清单中移除",
+    "list_cleared": "购物清单已清空",
+    "ingredients_added": "已将 {recipe} 的 {count} 项食材添加到购物清单",
+    "sync_failed": "购物清单同步失败"
+  },
+  "timer": {
+    "title": "烹饪计时器",
+    "start": "开始",
+    "pause": "暂停",
+    "resume": "继续",
+    "reset": "重置",
+    "time_up": "时间到！",
+    "remaining": "剩余"
+  },
+  "profile": {
+    "title": "我的个人中心",
+    "saved_menus": "保存的菜单",
+    "favorites": "收藏的食谱",
+    "history": "烹饪历史",
+    "settings": "设置",
+    "language": "语言",
+    "theme": "主题",
+    "notifications": "通知",
+    "subscription": "订阅",
+    "credits": "剩余次数"
+  },
+  "auth": {
+    "login_title": "登录您的账户",
+    "signup_title": "创建账户",
+    "email": "邮箱",
+    "password": "密码",
+    "confirm_password": "确认密码",
+    "login_button": "登录",
+    "signup_button": "注册",
+    "forgot_password": "忘记密码？",
+    "no_account": "还没有账户？",
+    "has_account": "已有账户？",
+    "continue_with": "或使用",
+    "google_login": "使用 Google 登录",
+    "google_login_error": "Google 登录失败",
+    "github_login": "使用 GitHub 登录",
+    "github_login_error": "GitHub 登录失败",
+    "check_email_title": "验证您的电子邮件",
+    "check_email_description": "我们已向您的邮箱发送了一封确认邮件",
+    "reset_password_title": "重置密码",
+    "reset_password_description": "输入您的邮箱地址，我们将向您发送重置密码的链接"
+  },
+  "common": {
+    "loading": "加载中...",
+    "error": "发生错误",
+    "success": "成功！",
+    "save": "保存",
+    "cancel": "取消",
+    "delete": "删除",
+    "edit": "编辑",
+    "back": "返回",
+    "next": "下一步",
+    "search": "搜索",
+    "view_all": "查看全部",
+    "learn_more": "了解更多",
+    "get_started": "开始使用",
+    "try_free": "免费试用"
+  },
+  "cta": {
+    "title": "准备好开始烧烤了吗？",
+    "subtitle": "几秒钟内创建您的完美烧烤菜单",
+    "button": "免费开始"
+  },
+  "footer": {
+    "description": "AI驱动的烧烤菜单生成器，让每次烧烤都完美。",
+    "product": "产品",
+    "resources": "资源",
+    "company": "公司",
+    "legal": "法律",
+    "copyright": "© 2025 BBQ Menu AI. 保留所有权利。"
+  }
+}
+

@@ -1,0 +1,113 @@
+{
+  "metadata": {
+    "title": "定价 - BBQ Menu AI",
+    "description": "选择适合您烧烤需求的完美套餐"
+  },
+  "pricing": {
+    "id": "pricing",
+    "sr_only_title": "BBQ Menu AI 定价",
+    "title": "定价",
+    "description": "选择适合您烧烤需求的完美套餐。",
+    "groups": [
+      {
+        "name": "one-time",
+        "title": "一次性购买",
+        "is_featured": true
+      }
+    ],
+    "items": [
+      {
+        "title": "5次套餐",
+        "description": "适合初次体验 BBQ Menu AI。",
+        "features_title": "包含",
+        "features": [
+          "5次AI菜单生成",
+          "基础食谱库",
+          "购物清单导出",
+          "邮件支持"
+        ],
+        "interval": "one-time",
+        "amount": 455,
+        "currency": "USD",
+        "price": "$4.55",
+        "is_featured": false,
+        "tip": "适合新手体验",
+        "button": {
+          "title": "立即购买",
+          "url": "/pricing",
+          "icon": "Flame"
+        },
+        "product_id": "five-times",
+        "product_name": "BBQ Menu AI 5次套餐",
+        "credits": 5,
+        "valid_days": 365,
+        "group": "one-time",
+        "plan_name": "5 Times"
+      },
+      {
+        "title": "10次套餐",
+        "description": "烧烤爱好者的最佳选择。",
+        "label": "热门",
+        "features_title": "包含",
+        "features": [
+          "20次AI菜单生成",
+          "完整食谱库访问",
+          "高级饮食筛选",
+          "购物清单导出",
+          "优先支持"
+        ],
+        "interval": "one-time",
+        "amount": 799,
+        "currency": "USD",
+        "price": "$7.99",
+        "is_featured": true,
+        "tip": "最受欢迎的选择",
+        "button": {
+          "title": "立即购买",
+          "url": "/pricing",
+          "icon": "Flame"
+        },
+        "product_id": "ten-times",
+        "product_name": "BBQ Menu AI 10次套餐",
+        "credits": 20,
+        "valid_days": 365,
+        "group": "one-time",
+        "plan_name": "10 Times"
+      },
+      {
+        "title": "10000次套餐",
+        "description": "烧烤专业人士的终极套餐。",
+        "features_title": "包含",
+        "features": [
+          "10000次AI菜单生成",
+          "完整食谱库访问",
+          "高级饮食筛选",
+          "API访问",
+          "专属支持",
+          "抢先体验新功能"
+        ],
+        "interval": "one-time",
+        "amount": 1499,
+        "currency": "USD",
+        "price": "$14.99",
+        "is_featured": false,
+        "tip": "专业人士的最佳选择",
+        "button": {
+          "title": "立即购买",
+          "url": "/pricing",
+          "icon": "Flame"
+        },
+        "product_id": "10000-times",
+        "product_name": "BBQ Menu AI 10000次套餐",
+        "credits": 10000,
+        "valid_days": 365,
+        "group": "one-time",
+        "plan_name": "10000 Times"
+      }
+    ]
+  },
+  "page": {
+    "current_plan": "当前套餐",
+    "processing": "处理中"
+  }
+}

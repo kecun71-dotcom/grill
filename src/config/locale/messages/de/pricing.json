@@ -1,0 +1,113 @@
+{
+  "metadata": {
+    "title": "Preise - BBQ Menu AI",
+    "description": "Wählen Sie das perfekte Paket für Ihre Grillbedürfnisse"
+  },
+  "pricing": {
+    "id": "pricing",
+    "sr_only_title": "BBQ Menu AI Preise",
+    "title": "Preise",
+    "description": "Wählen Sie das perfekte Paket für Ihre Grillbedürfnisse.",
+    "groups": [
+      {
+        "name": "one-time",
+        "title": "Einmaliger Kauf",
+        "is_featured": true
+      }
+    ],
+    "items": [
+      {
+        "title": "5-mal Paket",
+        "description": "Perfekt zum Ausprobieren von BBQ Menu AI.",
+        "features_title": "Enthält",
+        "features": [
+          "5 KI-Menü-Generierungen",
+          "Basis-Rezeptbibliothek",
+          "Einkaufslisten-Export",
+          "E-Mail-Support"
+        ],
+        "interval": "one-time",
+        "amount": 455,
+        "currency": "USD",
+        "price": "$4.55",
+        "is_featured": false,
+        "tip": "Ideal für Anfänger",
+        "button": {
+          "title": "Jetzt Kaufen",
+          "url": "/pricing",
+          "icon": "Flame"
+        },
+        "product_id": "five-times",
+        "product_name": "BBQ Menu AI 5-mal Paket",
+        "credits": 5,
+        "valid_days": 365,
+        "group": "one-time",
+        "plan_name": "5 Times"
+      },
+      {
+        "title": "10-mal Paket",
+        "description": "Beste Wahl für regelmäßige Griller.",
+        "label": "Beliebt",
+        "features_title": "Enthält",
+        "features": [
+          "20 KI-Menü-Generierungen",
+          "Voller Zugang zur Rezeptbibliothek",
+          "Erweiterte Ernährungsfilter",
+          "Einkaufslisten-Export",
+          "Prioritäts-Support"
+        ],
+        "interval": "one-time",
+        "amount": 799,
+        "currency": "USD",
+        "price": "$7.99",
+        "is_featured": true,
+        "tip": "Beliebteste Wahl",
+        "button": {
+          "title": "Jetzt Kaufen",
+          "url": "/pricing",
+          "icon": "Flame"
+        },
+        "product_id": "ten-times",
+        "product_name": "BBQ Menu AI 10-mal Paket",
+        "credits": 20,
+        "valid_days": 365,
+        "group": "one-time",
+        "plan_name": "10 Times"
+      },
+      {
+        "title": "10000-mal Paket",
+        "description": "Ultimate Paket für BBQ-Profis.",
+        "features_title": "Enthält",
+        "features": [
+          "10000 KI-Menü-Generierungen",
+          "Voller Zugang zur Rezeptbibliothek",
+          "Erweiterte Ernährungsfilter",
+          "API-Zugang",
+          "Dedizierter Support",
+          "Früher Zugang zu neuen Funktionen"
+        ],
+        "interval": "one-time",
+        "amount": 1499,
+        "currency": "USD",
+        "price": "$14.99",
+        "is_featured": false,
+        "tip": "Beste Wahl für Profis",
+        "button": {
+          "title": "Jetzt Kaufen",
+          "url": "/pricing",
+          "icon": "Flame"
+        },
+        "product_id": "10000-times",
+        "product_name": "BBQ Menu AI 10000-mal Paket",
+        "credits": 10000,
+        "valid_days": 365,
+        "group": "one-time",
+        "plan_name": "10000 Times"
+      }
+    ]
+  },
+  "page": {
+    "current_plan": "Aktuelles Paket",
+    "processing": "Wird verarbeitet"
+  }
+}

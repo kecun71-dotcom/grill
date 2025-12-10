@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "title": "Blog - BBQ Menu AI",
+    "description": "Tipps, Tricks und Rezepte rund ums Grillen"
+  },
+  "blog": {
+    "id": "blog",
+    "sr_only_title": "BBQ Menu AI Blog",
+    "title": "Blog",
+    "description": "Tipps, Tricks und Rezepte rund ums Grillen."
+  },
+  "page": {
+    "all": "Alle",
+    "no_content": "Kein Inhalt",
+    "crumb": "Blog",
+    "toc": "Inhaltsverzeichnis"
+  }
+}
+
