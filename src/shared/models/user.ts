@@ -38,6 +38,18 @@ export async function findUserById(userId: string) {
   return result;
 }
 
+// 根据用户 ID 获取用户
+export async function getUserById(userId: string): Promise<User | null> {
+  const [result] = await db().select().from(user).where(eq(user.id, userId));
+  return result || null;
+}
+
+// 根据用户邮箱获取用户
+export async function getUserByEmail(email: string): Promise<User | null> {
+  const [result] = await db().select().from(user).where(eq(user.email, email));
+  return result || null;
+}
+
 export async function getUsers({
   page = 1,
   limit = 30,

@@ -14,7 +14,7 @@ import {
 } from '@/shared/models/credit';
 
 // 新用户初始赠送的积分数量
-const INITIAL_FREE_CREDITS = 5;
+const INITIAL_FREE_CREDITS = 3;
 
 // Static auth options - NO database connection
 // This ensures zero database calls during build time
@@ -75,7 +75,7 @@ export async function getAuthOptions() {
                 transactionScene: CreditTransactionScene.GIFT,
                 credits: INITIAL_FREE_CREDITS,
                 remainingCredits: INITIAL_FREE_CREDITS,
-                description: `Welcome bonus: ${INITIAL_FREE_CREDITS} free credits`,
+                description: `Welcome bonus: ${INITIAL_FREE_CREDITS} free credits. Please purchase more when used up.`,
                 expiresAt: null, // 永不过期
                 status: CreditStatus.ACTIVE,
               });

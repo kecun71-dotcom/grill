@@ -10,8 +10,8 @@ import {
   getRemainingCredits,
 } from '@/shared/models/credit';
 
-// 欢迎积分数量
-const WELCOME_CREDITS = 10;
+// 欢迎积分数量（与新用户注册一致）
+const WELCOME_CREDITS = 3;
 
 /**
  * 给当前登录用户发放欢迎积分（仅用于现有用户测试）
@@ -59,7 +59,7 @@ export async function POST(request: NextRequest) {
       transactionScene: CreditTransactionScene.GIFT,
       credits: WELCOME_CREDITS,
       remainingCredits: WELCOME_CREDITS,
-      description: `Welcome bonus: ${WELCOME_CREDITS} free credits`,
+      description: `Welcome bonus: ${WELCOME_CREDITS} free credits. Please purchase more when used up.`,
       expiresAt: null, // 永不过期
       status: CreditStatus.ACTIVE,
     });
