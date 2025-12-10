@@ -4,8 +4,17 @@ import { oneTap } from 'better-auth/plugins';
 import { db } from '@/core/db';
 import { envConfigs } from '@/config';
 import * as schema from '@/config/db/schema';
-import { getUuid } from '@/shared/lib/hash';
+import { getSnowId, getUuid } from '@/shared/lib/hash';
 import { getAllConfigs } from '@/shared/models/config';
+import {
+  createCredit,
+  CreditStatus,
+  CreditTransactionScene,
+  CreditTransactionType,
+} from '@/shared/models/credit';
+
+// 新用户初始赠送的积分数量
+const INITIAL_FREE_CREDITS = 5;
 
 // Static auth options - NO database connection
 // This ensures zero database calls during build time
@@ -50,6 +59,35 @@ export async function getAuthOptions() {
       configs.google_client_id && configs.google_one_tap_enabled === 'true'
         ? [oneTap()]
         : [],
+    // 数据库钩子：新用户注册后自动赠送免费积分
+    databaseHooks: {
+      user: {
+        create: {
+          after: async (user: { id: string; email: string }) => {
+            try {
+              // 为新用户创建免费积分
+              await createCredit({
+                id: getUuid(),
+                userId: user.id,
+                userEmail: user.email,
+                transactionNo: getSnowId(),
+                transactionType: CreditTransactionType.GRANT,
+                transactionScene: CreditTransactionScene.GIFT,
+                credits: INITIAL_FREE_CREDITS,
+                remainingCredits: INITIAL_FREE_CREDITS,
+                description: `Welcome bonus: ${INITIAL_FREE_CREDITS} free credits`,
+                expiresAt: null, // 永不过期
+                status: CreditStatus.ACTIVE,
+              });
+              console.log(`[Auth] Granted ${INITIAL_FREE_CREDITS} free credits to new user: ${user.email}`);
+            } catch (error) {
+              console.error('[Auth] Failed to grant free credits to new user:', error);
+              // 不抛出错误，避免影响用户注册流程
+            }
+          },
+        },
+      },
+    },
   };
 }
 
