@@ -83,7 +83,7 @@
       }
     ],
     "show_avatars": true,
-    "avatars_tip": "1000+ grill masters using BBQ Menu AI",
+    "avatars_tip": "BBQ Menu AI, Powered by gemini-2.5-flash. (gemini-2.5-flash only provides technical support and has no business affiliation with this site)",
     "show_award": false,
     "image": {
       "src": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1920&h=1080&fit=crop",

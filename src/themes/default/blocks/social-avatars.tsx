@@ -1,38 +1,22 @@
-import { Star } from 'lucide-react';
-
 import { Avatar, AvatarImage } from '@/shared/components/ui/avatar';
 
-const userImgUrls = [
-  '/imgs/avatars/1.png',
-  '/imgs/avatars/2.png',
-  '/imgs/avatars/3.png',
-  '/imgs/avatars/4.png',
-  '/imgs/avatars/5.png',
-  '/imgs/avatars/6.png',
-];
-
 export function SocialAvatars({ tip }: { tip: string }) {
+  // Split tip into title and disclaimer if it contains parentheses
+  const hasDisclaimer = tip.includes('(') && tip.includes(')');
+  const title = hasDisclaimer ? tip.substring(0, tip.indexOf('(')).trim() : tip;
+  const disclaimer = hasDisclaimer ? tip.substring(tip.indexOf('(')) : '';
+
   return (
-    <div className="mx-auto mt-8 flex w-fit flex-col items-center gap-2 sm:flex-row">
-      <span className="mx-4 inline-flex items-center -space-x-2">
-        {userImgUrls.map((url, index) => (
-          <Avatar className="size-10 border" key={index}>
-            <AvatarImage src={url} alt="placeholder" />
-          </Avatar>
-        ))}
-      </span>
-      <div className="flex flex-col items-center gap-1 md:items-start">
-        <div className="flex items-center gap-1">
-          {Array.from({ length: 5 }).map((_, index) => (
-            <Star
-              key={index}
-              className="size-4 fill-yellow-400 text-yellow-400"
-            />
-          ))}
-        </div>
-        <p className="text-muted-foreground text-left text-sm font-normal">
-          {tip}
+    <div className="mx-auto mt-8 flex w-fit flex-col items-center gap-3">
+      <div className="flex flex-col items-center gap-1">
+        <p className="text-foreground text-center text-base font-medium">
+          {title}
         </p>
+        {disclaimer && (
+          <p className="text-muted-foreground text-center text-xs font-normal max-w-md">
+            {disclaimer}
+          </p>
+        )}
       </div>
     </div>
   );
