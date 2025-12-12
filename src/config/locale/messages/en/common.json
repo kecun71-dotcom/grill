@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "ShipAny Template Two",
-    "description": "ShipAny is a NextJS boilerplate for building AI SaaS startups. Ship Fast with a variety of templates and components.",
-    "keywords": "shipany, shipany-boilerplate, shipany-template-two-demo"
+    "title": "BBQ Menu AI",
+    "description": "BBQ Menu AI is an AI-powered BBQ menu generator that creates perfect grilling menus based on your preferences.",
+    "keywords": "bbq, barbecue, menu, ai, recipe generator"
   },
   "sign": {
     "sign_in_title": "Sign In",

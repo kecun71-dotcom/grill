@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "ShipAny 模板二",
-    "description": "ShipAny 是用于构建 AI SaaS 创业项目的 NextJS 脚手架。提供丰富模板和组件，助您快速上线产品。",
-    "keywords": "shipany, shipany-boilerplate, shipany-template-two-demo"
+    "title": "BBQ Menu AI",
+    "description": "BBQ Menu AI 是一款AI驱动的烧烤菜单生成器，根据您的偏好创建完美的烧烤菜单。",
+    "keywords": "bbq, 烧烤, 菜单, ai, 食谱生成器"
   },
   "sign": {
     "sign_in_title": "登录",

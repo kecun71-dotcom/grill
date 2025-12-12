@@ -95,6 +95,7 @@ export function FeaturesAccordion({
                         alt={images[activeItem].alt}
                         width={1207}
                         height={929}
+                        unoptimized
                         // prevent img from exceeding parent
                         style={{ maxWidth: '100%', height: 'auto' }}
                       />

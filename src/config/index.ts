@@ -21,7 +21,7 @@ export type ConfigMap = Record<string, string>;
 
 export const envConfigs = {
   app_url: process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000',
-  app_name: process.env.NEXT_PUBLIC_APP_NAME ?? 'ShipAny App',
+  app_name: process.env.NEXT_PUBLIC_APP_NAME ?? 'BBQ Menu AI',
   theme: process.env.NEXT_PUBLIC_THEME ?? 'default',
   appearance: process.env.NEXT_PUBLIC_APPEARANCE ?? 'system',
   locale: process.env.NEXT_PUBLIC_DEFAULT_LOCALE ?? 'en',
@@ -42,4 +42,8 @@ export const envConfigs = {
   creem_api_key: process.env.CREEM_API_KEY ?? '',
   creem_signing_secret: process.env.CREEM_SIGNING_SECRET ?? '',
   creem_product_ids: process.env.CREEM_PRODUCT_IDS ?? '',
+  // AI Service (Evolink)
+  ai_api_url: process.env.AI_API_URL ?? 'https://api.evolink.ai/v1/chat/completions',
+  ai_api_key: process.env.AI_API_KEY ?? '',
+  ai_model: process.env.AI_MODEL ?? 'gemini-2.5-flash',
 };

@@ -1,13 +1,15 @@
 import { NextRequest, NextResponse } from 'next/server';
 
+import { envConfigs } from '@/config';
+import { buildBBQPrompt } from '@/config/prompts/bbq-menu';
 import { getAuth } from '@/core/auth';
 import { getUuid } from '@/shared/lib/hash';
 import { consumeCredits, getRemainingCredits } from '@/shared/models/credit';
 
-// Evolink AI 配置
-const EVOLINK_API_URL = 'https://api.evolink.ai/v1/chat/completions';
-const EVOLINK_API_KEY = 'sk-AHHoM8cWdtz0quFtsBGdbLHB3ZdU5iBBJ0f1IgINTMR7tkTq';
-const EVOLINK_MODEL = 'gemini-2.5-flash';
+// AI 配置从环境变量读取
+const AI_API_URL = envConfigs.ai_api_url;
+const AI_API_KEY = envConfigs.ai_api_key;
+const AI_MODEL = envConfigs.ai_model;
 
 // 请求体类型
 interface GenerateMenuRequest {
@@ -37,78 +39,6 @@ interface AIGeneratedRecipe {
   imageQuery?: string;
 }
 
-// 构建 AI 提示词
-function buildPrompt(params: GenerateMenuRequest): string {
-  const { servings = 4, budget = 'medium', dietaryNeeds = [], preferences, availableIngredients, language = 'en' } = params;
-
-  const budgetMap = {
-    low: { en: 'budget-friendly', zh: '经济实惠', de: 'günstig' },
-    medium: { en: 'moderate', zh: '中等', de: 'mittel' },
-    high: { en: 'premium', zh: '高端', de: 'premium' },
-  };
-
-  const languageInstructions = {
-    en: 'Generate recipe names, descriptions, and instructions in English.',
-    zh: '请用中文生成食谱名称、描述和步骤说明。',
-    de: 'Generiere Rezeptnamen, Beschreibungen und Anweisungen auf Deutsch.',
-  };
-
-  const langKey = language as keyof typeof languageInstructions;
-  const budgetText = budgetMap[budget]?.[langKey] || budgetMap[budget]?.en || 'moderate';
-
-  return `You are a professional BBQ chef. Generate 4 BBQ recipes based on the following requirements:
-
-Requirements:
-- Servings: ${servings} people
-- Budget level: ${budgetText}
-- Dietary restrictions: ${dietaryNeeds.length > 0 ? dietaryNeeds.join(', ') : 'None'}
-${preferences ? `- Additional preferences: ${preferences}` : ''}
-${availableIngredients ? `- Available ingredients: ${availableIngredients}` : ''}
-
-${languageInstructions[langKey] || languageInstructions.en}
-
-IMPORTANT: You must respond with a valid JSON array of exactly 4 recipe objects. Each recipe must follow this exact structure:
-
-[
-  {
-    "name": "Recipe Name",
-    "description": "A brief description of the dish",
-    "prepTime": 15,
-    "cookTime": 25,
-    "difficulty": "easy",
-    "servings": ${servings},
-    "ingredients": [
-      {"name": "Ingredient name", "amount": 500, "unit": "g", "price": 800},
-      {"name": "Another ingredient", "amount": 200, "unit": "ml", "price": 300}
-    ],
-    "instructions": [
-      "Step 1: Detailed instruction",
-      "Step 2: Another instruction"
-    ],
-    "imageQuery": "grilled beef steak"
-  }
-]
-
-Rules for ingredients:
-- "amount" must be a number (no strings)
-- "unit" must be one of: "g", "ml", "piece", "tbsp", "tsp", "clove", "sprig"
-- "price" is in cents (e.g., 800 = $8.00)
-- For weight, always use grams (g)
-- For volume, always use milliliters (ml)
-
-Rules for difficulty:
-- Must be exactly one of: "easy", "medium", "hard"
-
-Rules for times:
-- prepTime and cookTime must be numbers (minutes)
-
-Rules for imageQuery:
-- A short English phrase describing the dish for image search
-
-Generate varied BBQ recipes: include at least one meat dish, and consider including vegetables, seafood, or other proteins.
-
-Respond ONLY with the JSON array, no additional text.`;
-}
 
 // 解析 AI 响应
 function parseAIResponse(text: string): AIGeneratedRecipe[] {
@@ -480,20 +410,28 @@ export async function POST(request: NextRequest) {
       console.log('[BBQ] Development mode: skipping credits check');
     }
 
-    // 构建提示词
-    const prompt = buildPrompt(body);
+    // 构建提示词（使用配置化的提示词模板）
+    const prompt = buildBBQPrompt({
+      servings: body.servings || 4,
+      budget: body.budget || 'medium',
+      dietaryNeeds: body.dietaryNeeds || [],
+      preferences: body.preferences,
+      availableIngredients: body.availableIngredients,
+      language: body.language || 'en',
+      recipeCount: 4,
+    });
 
-    console.log('[BBQ] Making API request to Evolink AI');
+    console.log('[BBQ] Making API request to AI service');
 
-    // 调用 Evolink AI
-    const response = await fetch(EVOLINK_API_URL, {
+    // 调用 AI 服务
+    const response = await fetch(AI_API_URL, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${EVOLINK_API_KEY}`,
+        'Authorization': `Bearer ${AI_API_KEY}`,
       },
       body: JSON.stringify({
-        model: EVOLINK_MODEL,
+        model: AI_MODEL,
         messages: [
           {
             role: 'user',
@@ -503,11 +441,11 @@ export async function POST(request: NextRequest) {
       }),
     });
 
-    console.log('[BBQ] Evolink AI response status:', response.status);
+    console.log('[BBQ] AI service response status:', response.status);
 
     if (!response.ok) {
       const errorText = await response.text();
-      console.error('[BBQ] Evolink AI error:', errorText);
+      console.error('[BBQ] AI service error:', errorText);
       
       // 如果 AI 调用失败，在开发模式返回模拟数据
       if (isDevelopment) {
@@ -531,7 +469,7 @@ export async function POST(request: NextRequest) {
     }
 
     const data = await response.json();
-    console.log('[BBQ] Successfully received Evolink AI response');
+    console.log('[BBQ] Successfully received AI service response');
 
     // 解析响应
     const content = data.choices?.[0]?.message?.content || '{}';

@@ -9,6 +9,7 @@ import { Button } from '@/shared/components/ui/button';
 import { Card } from '@/shared/components/ui/card';
 import { cn } from '@/shared/lib/utils';
 import { formatCookingTime } from '@/shared/lib/units';
+import { getRecipeImage } from '@/shared/lib/bbq-images';
 import type { Recipe } from '@/shared/models/bbq-recipe';
 
 interface RecipeCardProps {
@@ -25,41 +26,6 @@ const difficultyColors = {
   medium: 'bbq-badge-medium',
   hard: 'bbq-badge-hard',
 } as const;
-
-// 根据食谱名称或 imageQuery 获取图片
-function getRecipeImage(name: string, imageQuery?: string): string {
-  const query = imageQuery?.toLowerCase() || name.toLowerCase();
-
-  // BBQ 图片映射 - 使用 Unsplash 在线图片
-  const imageMap: Record<string, string> = {
-    steak: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=800&h=600&fit=crop',
-    beef: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=800&h=600&fit=crop',
-    chicken: 'https://images.unsplash.com/photo-1532550907401-a500c9a57435?w=800&h=600&fit=crop',
-    wing: 'https://images.unsplash.com/photo-1527477396000-e27163b481c2?w=800&h=600&fit=crop',
-    pork: 'https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=800&h=600&fit=crop',
-    ribs: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=800&h=600&fit=crop',
-    lamb: 'https://images.unsplash.com/photo-1603048297172-c92544798d5a?w=800&h=600&fit=crop',
-    fish: 'https://images.unsplash.com/photo-1510130387422-82bed34b37e9?w=800&h=600&fit=crop',
-    shrimp: 'https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?w=800&h=600&fit=crop',
-    prawn: 'https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?w=800&h=600&fit=crop',
-    seafood: 'https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?w=800&h=600&fit=crop',
-    vegetable: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&h=600&fit=crop',
-    veggie: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&h=600&fit=crop',
-    kebab: 'https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=800&h=600&fit=crop',
-    skewer: 'https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=800&h=600&fit=crop',
-    sausage: 'https://images.unsplash.com/photo-1587536849024-daaa4a417b16?w=800&h=600&fit=crop',
-  };
-
-  // 查找匹配的图片
-  for (const [keyword, image] of Object.entries(imageMap)) {
-    if (query.includes(keyword)) {
-      return image;
-    }
-  }
-
-  // 默认图片
-  return 'https://images.unsplash.com/photo-1544025162-d76694265947?w=800&h=600&fit=crop';
-}
 
 export function RecipeCard({
   recipe,

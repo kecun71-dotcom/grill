@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <!-- 烤架底座 -->
+  <ellipse cx="24" cy="36" rx="18" ry="6" fill="#4A4A4A"/>
+  <ellipse cx="24" cy="34" rx="16" ry="4.5" fill="#333"/>
+  
+  <!-- 烤架支架 -->
+  <rect x="9" y="36" width="3" height="9" fill="#666" rx="1"/>
+  <rect x="36" y="36" width="3" height="9" fill="#666" rx="1"/>
+  
+  <!-- 烤架网格 -->
+  <ellipse cx="24" cy="31" rx="14" ry="3.5" fill="#222"/>
+  <line x1="11" y1="31" x2="37" y2="31" stroke="#555" stroke-width="1.2"/>
+  <line x1="12" y1="29" x2="36" y2="29" stroke="#555" stroke-width="1.2"/>
+  <line x1="13" y1="33" x2="35" y2="33" stroke="#555" stroke-width="1.2"/>
+  
+  <!-- 火焰 -->
+  <path d="M15 28 Q17 22 15 17 Q18 20 20 16 Q22 22 22 26" fill="#FF6B35" opacity="0.9"/>
+  <path d="M24 28 Q26 22 24 17 Q27 20 29 16 Q31 22 33 26" fill="#FF6B35" opacity="0.9"/>
+  <path d="M18 27 Q20 22 18 19 Q21 22 23 19 Q25 24 25 27" fill="#FFD93D" opacity="0.8"/>
+  <path d="M26 27 Q28 22 26 19 Q29 22 31 19 Q33 24 33 27" fill="#FFD93D" opacity="0.8"/>
+  
+  <!-- 食物 - 牛排 -->
+  <ellipse cx="18" cy="28" rx="4.5" ry="2.2" fill="#8B4513"/>
+  <path d="M14 27 Q18 25.5 22 27" stroke="#5D2E0C" stroke-width="0.8" fill="none"/>
+  
+  <!-- 食物 - 香肠 -->
+  <ellipse cx="30" cy="28" rx="5" ry="1.8" fill="#C65D3B"/>
+  <path d="M26 27 Q30 25.5 34 27" stroke="#8B3A2F" stroke-width="0.6" fill="none"/>
+  
+  <!-- 烟雾 -->
+  <path d="M17 14 Q15 11 17 8 Q19 11 17 14" fill="#888" opacity="0.35"/>
+  <path d="M24 12 Q22 9 24 6 Q26 9 24 12" fill="#888" opacity="0.35"/>
+  <path d="M31 14 Q29 11 31 8 Q33 11 31 14" fill="#888" opacity="0.35"/>
+</svg>
+

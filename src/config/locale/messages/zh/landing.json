@@ -4,7 +4,7 @@
     "brand": {
       "title": "BBQ Menu AI",
       "logo": {
-        "src": "/logo.png",
+        "src": "/logo.svg",
         "alt": "BBQ Menu AI"
       },
       "url": "/"
@@ -65,7 +65,7 @@
       "title": "🔥 BBQ Menu AI 来了！",
       "url": "/generate"
     },
-    "tip": "🎁 所有计划7天免费试用",
+    "tip": "🎁 注册即可免费试用",
     "buttons": [
       {
         "title": "生成菜单",
@@ -131,21 +131,37 @@
     "title": "为什么选择 BBQ Menu AI？",
     "label": "优势",
     "description": "完美烧烤体验所需的一切 - 从AI食谱到购物规划。",
+    "image": {
+      "src": "https://images.unsplash.com/photo-1544025162-d76694265947",
+      "alt": "美味烧烤"
+    },
     "items": [
       {
         "title": "节省时间",
         "description": "无需再无休止地搜索食谱。我们的AI为任何场合即时创建完美菜单。",
-        "icon": "RiTimeLine"
+        "icon": "RiTimeLine",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1544025162-d76694265947",
+          "alt": "节省时间烧烤"
+        }
       },
       {
         "title": "预算友好",
         "description": "选择您的预算，获取完美匹配的食谱。",
-        "icon": "RiMoneyDollarCircleLine"
+        "icon": "RiMoneyDollarCircleLine",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd",
+          "alt": "预算友好烧烤"
+        }
       },
       {
         "title": "注重饮食",
         "description": "素食、纯素、无麸质和低碳水选项，满足各种口味。",
-        "icon": "RiHeartPulseLine"
+        "icon": "RiHeartPulseLine",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1",
+          "alt": "注重饮食烧烤"
+        }
       }
     ]
   },
@@ -213,56 +229,15 @@
   },
   "stats": {
     "id": "stats",
-    "title": "烧烤爱好者信赖我们",
-    "description": "简单快速的烧烤菜单。",
-    "items": [
-      {
-        "title": "1000+",
-        "description": "用户"
-      },
-      {
-        "title": "5000+",
-        "description": "生成的菜单"
-      },
-      {
-        "title": "3",
-        "description": "种语言"
-      }
-    ]
+    "title": "",
+    "description": "",
+    "items": []
   },
   "testimonials": {
     "id": "testimonials",
-    "title": "用户评价",
-    "description": "使用 BBQ Menu AI 的烧烤大师的反馈。",
-    "items": [
-      {
-        "name": "张明",
-        "role": "周末烧烤爱好者",
-        "quote": "终于不用再无休止地搜索食谱了！BBQ Menu AI 彻底改变了我的烧烤派对。",
-        "image": {
-          "src": "/imgs/avatars/1.png",
-          "alt": "张明"
-        }
-      },
-      {
-        "name": "李婷",
-        "role": "美食博主",
-        "quote": "购物清单功能太棒了。我节省了大量的规划时间！",
-        "image": {
-          "src": "/imgs/avatars/2.png",
-          "alt": "李婷"
-        }
-      },
-      {
-        "name": "王伟",
-        "role": "家庭烧烤达人",
-        "quote": "非常适合家庭烧烤。饮食筛选帮助我们照顾到所有客人。",
-        "image": {
-          "src": "/imgs/avatars/3.png",
-          "alt": "王伟"
-        }
-      }
-    ]
+    "title": "",
+    "description": "",
+    "items": []
   },
   "faq": {
     "id": "faq",
@@ -280,7 +255,7 @@
       },
       {
         "question": "有免费试用吗？",
-        "answer": "有的！所有计划都提供7天免费试用。无需信用卡。"
+        "answer": "有的！注册即有3次免费额度。无需信用卡。"
       },
       {
         "question": "可以保存食谱吗？",
@@ -332,7 +307,7 @@
       "title": "BBQ Menu AI",
       "description": "AI驱动的烧烤菜单生成器，让每次烧烤都完美。",
       "logo": {
-        "src": "/logo.png",
+        "src": "/logo.svg",
         "alt": "BBQ Menu AI"
       },
       "url": "/"
@@ -420,6 +395,7 @@
       ]
     },
     "show_theme": true,
-    "show_locale": true
+    "show_locale": true,
+    "show_built_with": false
   }
 }

@@ -4,7 +4,7 @@
     "brand": {
       "title": "BBQ Menu AI",
       "logo": {
-        "src": "/logo.png",
+        "src": "/logo.svg",
         "alt": "BBQ Menu AI"
       },
       "url": "/"
@@ -65,7 +65,7 @@
       "title": "🔥 BBQ Menu AI is here!",
       "url": "/generate"
     },
-    "tip": "🎁 7-day free trial for all plans",
+    "tip": "🎁 Free trial upon registration",
     "buttons": [
       {
         "title": "Generate Menu",
@@ -131,21 +131,37 @@
     "title": "Why BBQ Menu AI?",
     "label": "Benefits",
     "description": "Everything you need for the perfect grilling experience - from AI-powered recipes to shopping planning.",
+    "image": {
+      "src": "https://images.unsplash.com/photo-1544025162-d76694265947",
+      "alt": "Delicious BBQ"
+    },
     "items": [
       {
         "title": "Save Time",
         "description": "No more endless recipe searching. Our AI creates perfect menus instantly for any occasion.",
-        "icon": "RiTimeLine"
+        "icon": "RiTimeLine",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1544025162-d76694265947",
+          "alt": "Save Time BBQ"
+        }
       },
       {
         "title": "Budget-Friendly",
         "description": "Choose your budget and get recipes that match perfectly.",
-        "icon": "RiMoneyDollarCircleLine"
+        "icon": "RiMoneyDollarCircleLine",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd",
+          "alt": "Budget-Friendly BBQ"
+        }
       },
       {
         "title": "Diet-Conscious",
         "description": "Vegetarian, vegan, gluten-free, and low-carb options for every taste.",
-        "icon": "RiHeartPulseLine"
+        "icon": "RiHeartPulseLine",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1",
+          "alt": "Diet-Conscious BBQ"
+        }
       }
     ]
   },
@@ -213,56 +229,15 @@
   },
   "stats": {
     "id": "stats",
-    "title": "BBQ Lovers Trust Us",
-    "description": "For easy and fast BBQ menus.",
-    "items": [
-      {
-        "title": "1000+",
-        "description": "Users"
-      },
-      {
-        "title": "5000+",
-        "description": "Menus Generated"
-      },
-      {
-        "title": "3",
-        "description": "Languages"
-      }
-    ]
+    "title": "",
+    "description": "",
+    "items": []
   },
   "testimonials": {
     "id": "testimonials",
-    "title": "What Our Users Say",
-    "description": "Feedback from grill masters using BBQ Menu AI.",
-    "items": [
-      {
-        "name": "Mike Johnson",
-        "role": "Weekend Griller",
-        "quote": "Finally, no more endless recipe searching! BBQ Menu AI has revolutionized my BBQ parties.",
-        "image": {
-          "src": "/imgs/avatars/1.png",
-          "alt": "Mike"
-        }
-      },
-      {
-        "name": "Sarah Chen",
-        "role": "Food Blogger",
-        "quote": "The shopping list feature is genius. I save so much time on planning!",
-        "image": {
-          "src": "/imgs/avatars/2.png",
-          "alt": "Sarah"
-        }
-      },
-      {
-        "name": "David Miller",
-        "role": "Family Dad",
-        "quote": "Perfect for family BBQs. The dietary filters help us accommodate all our guests.",
-        "image": {
-          "src": "/imgs/avatars/3.png",
-          "alt": "David"
-        }
-      }
-    ]
+    "title": "",
+    "description": "",
+    "items": []
   },
   "faq": {
     "id": "faq",
@@ -280,7 +255,7 @@
       },
       {
         "question": "Is there a free trial?",
-        "answer": "Yes! All plans come with a 7-day free trial. No credit card required."
+        "answer": "Yes! You get 3 free credits upon registration. No credit card required."
       },
       {
         "question": "Can I save my recipes?",
@@ -332,7 +307,7 @@
       "title": "BBQ Menu AI",
       "description": "AI-powered BBQ menu generator for perfect grilling every time.",
       "logo": {
-        "src": "/logo.png",
+        "src": "/logo.svg",
         "alt": "BBQ Menu AI"
       },
       "url": "/"
@@ -420,6 +395,7 @@
       ]
     },
     "show_theme": true,
-    "show_locale": true
+    "show_locale": true,
+    "show_built_with": false
   }
 }

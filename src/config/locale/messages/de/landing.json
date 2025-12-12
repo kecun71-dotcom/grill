@@ -4,7 +4,7 @@
     "brand": {
       "title": "BBQ Menu AI",
       "logo": {
-        "src": "/logo.png",
+        "src": "/logo.svg",
         "alt": "BBQ Menu AI"
       },
       "url": "/"
@@ -65,7 +65,7 @@
       "title": "🔥 BBQ Menu AI ist da!",
       "url": "/generate"
     },
-    "tip": "🎁 7 Tage kostenlose Testversion",
+    "tip": "🎁 Kostenlose Testversion bei Registrierung",
     "buttons": [
       {
         "title": "Menü Generieren",
@@ -131,21 +131,37 @@
     "title": "Warum BBQ Menu AI?",
     "label": "Vorteile",
     "description": "Alles, was Sie für das perfekte Grillerlebnis brauchen - von KI-gestützten Rezepten bis zur Einkaufsplanung.",
+    "image": {
+      "src": "https://images.unsplash.com/photo-1544025162-d76694265947",
+      "alt": "Leckeres BBQ"
+    },
     "items": [
       {
         "title": "Zeitsparend",
         "description": "Kein langes Suchen nach Rezepten mehr. Unsere KI erstellt sofort perfekte Menüs für jeden Anlass.",
-        "icon": "RiTimeLine"
+        "icon": "RiTimeLine",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1544025162-d76694265947",
+          "alt": "Zeitsparendes BBQ"
+        }
       },
       {
         "title": "Budgetfreundlich",
         "description": "Wählen Sie Ihr Budget und erhalten Sie Rezepte, die perfekt dazu passen.",
-        "icon": "RiMoneyDollarCircleLine"
+        "icon": "RiMoneyDollarCircleLine",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd",
+          "alt": "Budgetfreundliches BBQ"
+        }
       },
       {
         "title": "Ernährungsbewusst",
         "description": "Vegetarische, vegane, glutenfreie und Low-Carb Optionen für jeden Geschmack.",
-        "icon": "RiHeartPulseLine"
+        "icon": "RiHeartPulseLine",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1",
+          "alt": "Ernährungsbewusstes BBQ"
+        }
       }
     ]
   },
@@ -213,56 +229,15 @@
   },
   "stats": {
     "id": "stats",
-    "title": "BBQ-Liebhaber vertrauen uns",
-    "description": "Für einfache und schnelle Grillmenüs.",
-    "items": [
-      {
-        "title": "1000+",
-        "description": "Nutzer"
-      },
-      {
-        "title": "5000+",
-        "description": "Generierte Menüs"
-      },
-      {
-        "title": "3",
-        "description": "Sprachen"
-      }
-    ]
+    "title": "",
+    "description": "",
+    "items": []
   },
   "testimonials": {
     "id": "testimonials",
-    "title": "Was unsere Nutzer sagen",
-    "description": "Feedback von Grillmeistern, die BBQ Menu AI nutzen.",
-    "items": [
-      {
-        "name": "Michael Schmidt",
-        "role": "Hobby-Griller",
-        "quote": "Endlich keine endlose Rezeptsuche mehr! BBQ Menu AI hat meine Grillabende revolutioniert.",
-        "image": {
-          "src": "/imgs/avatars/1.png",
-          "alt": "Michael"
-        }
-      },
-      {
-        "name": "Anna Müller",
-        "role": "Food-Bloggerin",
-        "quote": "Die Einkaufslisten-Funktion ist genial. Ich spare so viel Zeit bei der Planung!",
-        "image": {
-          "src": "/imgs/avatars/2.png",
-          "alt": "Anna"
-        }
-      },
-      {
-        "name": "Thomas Weber",
-        "role": "Familienvater",
-        "quote": "Perfekt für Familien-BBQs. Die Ernährungsfilter helfen uns, alle Gäste zu berücksichtigen.",
-        "image": {
-          "src": "/imgs/avatars/3.png",
-          "alt": "Thomas"
-        }
-      }
-    ]
+    "title": "",
+    "description": "",
+    "items": []
   },
   "faq": {
     "id": "faq",
@@ -280,7 +255,7 @@
       },
       {
         "question": "Ist eine kostenlose Testversion verfügbar?",
-        "answer": "Ja! Alle Pläne beinhalten eine 7-tägige kostenlose Testversion. Keine Kreditkarte erforderlich."
+        "answer": "Ja! Sie erhalten 3 kostenlose Credits bei der Registrierung. Keine Kreditkarte erforderlich."
       },
       {
         "question": "Kann ich meine Rezepte speichern?",
@@ -332,7 +307,7 @@
       "title": "BBQ Menu AI",
       "description": "KI-gestützter BBQ-Menü-Generator für perfektes Grillen jedes Mal.",
       "logo": {
-        "src": "/logo.png",
+        "src": "/logo.svg",
         "alt": "BBQ Menu AI"
       },
       "url": "/"
@@ -420,7 +395,8 @@
       ]
     },
     "show_theme": true,
-    "show_locale": true
+    "show_locale": true,
+    "show_built_with": false
   }
 }
 
