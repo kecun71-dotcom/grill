@@ -175,7 +175,7 @@ export function buildBBQPrompt(params: {
   const budgetLangKey = (language === 'de' ? 'de' : 'en') as 'en' | 'de';
   const budgetText = budgetMap[budget]?.[budgetLangKey] || budgetMap[budget]?.en || 'moderate';
   const languageInstruction = languageInstructions[langKey] || languageInstructions.en;
-  const styleGuide = bbqStyleGuide[langKey] || bbqStyleGuide.en;
+  const styleGuide = bbqStyleGuide[budgetLangKey] || bbqStyleGuide.en;
 
   let prompt = bbqMenuPromptTemplate
     .replace(/\{\{recipeCount\}\}/g, String(recipeCount))
