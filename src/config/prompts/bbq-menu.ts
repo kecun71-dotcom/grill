@@ -172,7 +172,8 @@ export function buildBBQPrompt(params: {
   } = params;
 
   const langKey = (language === 'de' ? 'de' : 'en') as keyof typeof languageInstructions;
-  const budgetText = budgetMap[budget]?.[langKey] || budgetMap[budget]?.en || 'moderate';
+  const budgetLangKey = (language === 'de' ? 'de' : 'en') as 'en' | 'de';
+  const budgetText = budgetMap[budget]?.[budgetLangKey] || budgetMap[budget]?.en || 'moderate';
   const languageInstruction = languageInstructions[langKey] || languageInstructions.en;
   const styleGuide = bbqStyleGuide[langKey] || bbqStyleGuide.en;
 
