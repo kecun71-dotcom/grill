@@ -6,6 +6,9 @@ import { getAuth } from '@/core/auth';
 import { getUuid } from '@/shared/lib/hash';
 import { consumeCredits, getRemainingCredits } from '@/shared/models/credit';
 
+// Vercel Function configuration - set timeout to 60 seconds
+export const maxDuration = 60;
+
 // AI 配置从环境变量读取
 const AI_API_URL = envConfigs.ai_api_url;
 const AI_API_KEY = envConfigs.ai_api_key;
