@@ -422,6 +422,9 @@ export async function POST(request: NextRequest) {
     });
 
     console.log('[BBQ] Making API request to AI service');
+    console.log('[BBQ] AI_API_URL:', AI_API_URL);
+    console.log('[BBQ] AI_MODEL:', AI_MODEL);
+    console.log('[BBQ] AI_API_KEY exists:', !!AI_API_KEY);
 
     // 调用 AI 服务
     const response = await fetch(AI_API_URL, {
