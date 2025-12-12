@@ -101,6 +101,11 @@ export function SocialProviders({
           <h3>{provider.title}</h3>
         </Button>
       ))}
+      {providers.length > 0 && (
+        <p className="text-xs text-muted-foreground text-center mt-2">
+          {t('browser_tip')}
+        </p>
+      )}
     </div>
   );
 }
