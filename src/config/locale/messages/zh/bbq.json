@@ -100,7 +100,8 @@
     "additional_preferences_placeholder": "特定烹饪风格或特殊要求...",
     "result_title": "您的烧烤菜单",
     "regenerate": "重新生成菜单",
-    "login_to_save": "登录以保存食谱"
+    "login_to_save": "登录以保存食谱",
+    "login_required": "请先注册，注册即可免费试用"
   },
   "recipe": {
     "ingredients": "食材",

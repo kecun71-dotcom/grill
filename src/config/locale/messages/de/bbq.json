@@ -100,7 +100,8 @@
     "additional_preferences_placeholder": "Bestimmte Kochstile oder besondere Wünsche...",
     "result_title": "Ihr BBQ-Menü",
     "regenerate": "Neues Menü Generieren",
-    "login_to_save": "Anmelden um Rezepte zu speichern"
+    "login_to_save": "Anmelden um Rezepte zu speichern",
+    "login_required": "Bitte registrieren Sie sich zuerst. Bei der Registrierung erhalten Sie kostenlose Credits!"
   },
   "recipe": {
     "ingredients": "Zutaten",

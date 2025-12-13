@@ -64,6 +64,11 @@ function GenerateMenuContent({ locale }: GenerateMenuPageProps) {
       });
 
       if (!response.ok) {
+        // 检查是否是未登录错误
+        if (response.status === 401) {
+          toast.error(t('login_required'));
+          return;
+        }
         throw new Error('Failed to generate menu');
       }
 
@@ -84,7 +89,7 @@ function GenerateMenuContent({ locale }: GenerateMenuPageProps) {
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen pt-16">
       <div className="container max-w-6xl mx-auto py-8 px-4">
         {/* Header */}
         <div className="text-center mb-12">

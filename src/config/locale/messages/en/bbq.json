@@ -100,7 +100,8 @@
     "additional_preferences_placeholder": "Any specific cooking styles or special requests...",
     "result_title": "Your BBQ Menu",
     "regenerate": "Generate New Menu",
-    "login_to_save": "Login to save recipes"
+    "login_to_save": "Login to save recipes",
+    "login_required": "Please sign up first. Registration gives you free credits to try!"
   },
   "recipe": {
     "ingredients": "Ingredients",
